@@ -1,0 +1,153 @@
+    html{
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+   
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        position: relative;
+        /* Center slide text vertically */
+       /* display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;*/
+    }
+
+    #swiper-slide1-ig1{
+        position: absolute;
+        top: 20%;
+        left: 40%; 
+        width: 40%;
+        height: 20%;
+        border-radius: 100%;
+        border: 1px solid red;
+        overflow: hidden;
+    }
+    #swiper-slide1-ig1 img{
+      width: 100%
+    }
+
+    #swiper-slide2-ig1{
+        height:100%;
+        width: 100%;
+
+    }
+    #swiper-slide2-ig2{
+       position: absolute;
+       top: 25%;
+       left: 10%;
+    }
+      #swiper-slide2-ig2 img{
+        transform: rotate(5deg);
+      }
+    #swiper-slide2-ig3{
+       position: absolute;
+       top: 42%;
+       left: 10%;
+      
+    }
+    #swiper-slide2-ig3 img{
+        transform: rotate(7deg);
+      }
+    #swiper-slide2-ig4{
+       position: absolute;
+       top: 55%;
+       left: 10%;
+    }
+    #swiper-slide2-ig4 img{
+        transform: rotate(-5deg);
+      }
+    #swiper-slide2-ig5{
+       position: absolute;
+       top: 70%;
+       left: 10%;
+    }
+    #swiper-slide2-ig5 img{
+        transform: rotate(-10deg);
+      }
+     #swiper-slide2-ig6{
+       position: absolute;
+       top:42%;
+       width: 20%;
+       right: 0%;
+    }
+     #swiper-slide2-sp1{
+       position: absolute;
+        font-family: "楷体";
+       top:27%;
+       left: 22%;
+       color: #ffffff;
+       font-size: 40px;
+       font-weight: bold;
+    }
+    #swiper-slide2-sp1 span{
+      display: inline-block;
+      transform: rotate(5deg);
+      }
+      #swiper-slide2-sp2{
+       position: absolute;
+        font-family: "楷体";
+       top:43%;
+       left: 30%;
+       color: #ffffff;
+       font-size: 30px;
+       font-weight: bold;
+     
+    }
+     #swiper-slide2-sp2 span{
+      display: inline-block;
+        transform: rotate(7deg);
+      }
+     #swiper-slide2-sp3{
+       position: absolute;
+        font-family: "楷体";
+       top:58%;
+       left: 13%;
+       color: #ffffff;
+       font-size: 27px;
+       font-weight: bold;
+ 
+    }
+     #swiper-slide2-sp3 span{
+      display: inline-block;
+        transform: rotate(-5deg);
+      }
+    #swiper-slide2-sp4{
+       position: absolute;
+        font-family: "楷体";
+       top:74%;
+       left: 13%;
+       color: #ffffff;
+       font-size: 17px;
+       font-weight: bold;
+     
+    }
+     #swiper-slide2-sp4 span{
+      display: inline-block;
+        transform: rotate(-10deg);
+      }
+   
