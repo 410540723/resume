@@ -33,10 +33,32 @@ body {
 	padding: 0;
 	color: #eee;
 	font-size: 20px;
-	text-align: center;
 	font-weight: bold;
+	display: flex;
 }
-
+#header span{
+	flex: 1;
+	text-align: center;
+}
+#header_bt1{
+	width: 15%;
+	height: 25px;
+	margin-top: 10px;
+	margin-left: 20px；
+}
+#header_bt1 i{
+	color: gray;
+}
+#header_bt2{
+	width: 15%;
+	height: 25px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 20px；
+}
+#header_bt2 i{
+	color: gray;
+}
 #footer {
 	position: absolute;
 	z-index: 2;
@@ -50,9 +72,10 @@ body {
 	display: flex;
  	align-items: center;
 	justify-content: center;
+	font-weight: bold;
 }	
 
-#footer .button{
+#footer button{
 	flex:1;
 	color: white;
 	text-align:center;
@@ -100,11 +123,109 @@ body {
 }
 
 #scroller li {
-	padding: 0 10px;
-	height: 40px;
+	
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	list-style: none;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.dv1{
+	height: 100px;
+	width: 40%;
+	overflow: hidden;
+	float: left;
+	border-bottom: 1px solid #f5f5f5;
+	text-align: center;
+}
+
+.ig1{
+	height: 95%;
+	width: 80%;
+
+}
+.dv2{
+	width: 60%;
+	height: 100px;
+	overflow: hidden;
+	float: left;
+	border-bottom: 1px solid #f5f5f5;
+	font-size: 15px;
+	line-height: 20px;
+
+}
+.scroller_ig1{
+	position: absolute;
+	left: 33%;
+	top: 23%;
+}
+.scroller_ig2{
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	top: 0%;
+}
+.scroller_sp1{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20%;
+}
+.scroller_sp2{
+	width: 40%;
+	float: left;
+	height: 75px;
+	text-align: right;
+	padding-right:20px; 
+	padding-left: 10px; 
 	line-height: 40px;
-	border-bottom: 1px solid #ccc;
-	border-top: 1px solid #fff;
-	background-color: #fafafa;
-	font-size: 14px;
+}
+
+.scroller_sp3{
+	width: 60%;
+	float: left;
+	height: 75px;
+	padding-right: 10px; 
+	padding-left: 20px;
+}
+.scroller_sp4{
+	margin-top: 50px;
+}
+
+.scroller_ig3{
+	position: absolute;
+	left: 23%;
+	top: 24%;
+}
+.scroller_sp5{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20%;
+}
+.scroller_sp6{
+	width: 30%;
+	float: left;
+	height: 75px;
+	text-align: right;
+	padding-right:20px; 
+	padding-left: 10px; 
+	line-height: 60px;
+}
+
+.scroller_sp7{
+	width: 70%;
+	float: left;
+	height: 75px;
+	padding-right: 10px; 
+	padding-left: 20px;
+}
+.scroller_sp8{
+	margin-top: 40px;
 }
