@@ -204,49 +204,49 @@ $('#enter').tap(function(){
 
 })
 
-//$.post("http://410540723.applinzi.com/php/getsign.php",{url:window.location.href},function(data){
-//
-//
-//pos=data.indexOf('}');
-//dataStr=data.substring(0,pos+1);
-//objDate=JSON.parse(dataStr);  
-//  wx.config({
-//  debug: true,
-//  appId: objDate.appId,
-//  timestamp: objDate.timestamp,
-//  nonceStr: objDate.nonceStr,
-//  signature:objDate.signature,
-//  jsApiList: [
-//    'chooseImage','scanQRCode'
-//  ]
-//  });
-//  
-//      
-//      
-//       wx.ready(function () {
-//    
-//        $('#header_bt2').tap(function(){
-//              
-//        wx.chooseImage({
-//          count: 1, // 默认9
-//          sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-//          sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-//          success: function (res) {
-//               var localIds = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
-//          }
-//      });
-//        }) ;
-//           $('#header_bt1').tap(function(){
-//              
-//        wx.scanQRCode({
-//  needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
-//  scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
-//  success: function (res) {
-//  var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
-//}
-//});
-//        }) ;
-// 
-//    });
-//  
-//  })
+$('#header_bt1').click(function(){
+	
+	
+	captureImage();
+})
+
+$('#header_bt2').click(function(){
+	
+	
+	galleryImgs();
+})
+
+
+// 扩展API加载完毕后调用onPlusReady回调函数 
+document.addEventListener( "plusready", onPlusReady, false );
+// 扩展API加载完毕，现在可以正常调用扩展API 
+function onPlusReady() {
+	console.log("plusready");
+}
+// 拍照
+function captureImage(){
+	var cmr = plus.camera.getCamera();
+	var res = cmr.supportedImageResolutions[0];
+	var fmt = cmr.supportedImageFormats[0];
+	console.log("Resolution: "+res+", Format: "+fmt);
+	cmr.captureImage( function( path ){
+			alert( "Capture image success: " + path );  
+		},
+		function( error ) {
+			alert( "Capture image failed: " + error.message );
+		},
+		{resolution:res,format:fmt}
+	);
+}
+
+function galleryImgs(){
+	// 从相册中选择图片
+	console.log("从相册中选择多张图片:");
+    plus.gallery.pick( function(e){
+    	for(var i in e.files){
+	    	console.log(e.files[i]);
+    	}
+    }, function ( e ) {
+    	console.log( "取消选择图片" );
+    },{filter:"image",multiple:true});
+}
