@@ -44,20 +44,27 @@ body {
 	width: 15%;
 	height: 25px;
 	margin-top: 10px;
-	margin-left: 20px；
+	margin-left: 20px;
+	border: 0px;
+	border-radius: 5px;
 }
 #header_bt1 i{
 	color: gray;
+	line-height: 25px;
 }
 #header_bt2{
 	width: 15%;
 	height: 25px;
 	margin-top: 10px;
 	float: left;
-	margin-right: 20px；
+	margin-right: 20px;
+	border: 0px;
+	border-radius: 5px;
+
 }
 #header_bt2 i{
 	color: gray;
+	line-height: 25px;
 }
 #footer {
 	position: absolute;
@@ -228,4 +235,20 @@ body {
 }
 .scroller_sp8{
 	margin-top: 40px;
+}
+.ddv1{
+	font-weight: bold;
+	color: #FF4040;
+	font-size: 30px;	
+	text-align: center;
+	width: 100%;
+	margin-top: 20%;
+}
+.ddv2{
+	font-weight: bold;
+	color: black;
+	font-size: 25px;	
+	text-align: center;
+	width: 100%;
+	margin-top: 20%;
 }

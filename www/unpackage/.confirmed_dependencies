@@ -1,0 +1,30 @@
+{
+	"index.html": {
+		"resources": [
+			"css/font/iconfont.woff",
+			"img/img/o_1arv9asin1v6js481q5f1050ugo1f.png",
+			"css/index.css",
+			"img/img/o_1arv9asin1s451li3cpb8v411mu1e.png",
+			"img/2.jpg",
+			"img/img/o_1arv9asin1hlkuooh801su1jb71d.png",
+			"img/img/o_1arvbddmi17oroufta31ssjeakn.jpg",
+			"img/img/o_1arvdnlqdbff6r1er31fa81mpp22.gif",
+			"img/img/o_1arv9asin1inr1s4jb8b135v1haa1c.png",
+			"js/index.js",
+			"css/font/iconfont.css",
+			"js/jweixin-1.0.0.js",
+			"img/o_1b0unq81g1b0q16ng1p21tm1qvi45.png",
+			"img/o_1b0unvlsc5f2ooqgv3c598f159.png",
+			"img/23.jpg",
+			"img/Foundation-10-5.jpg",
+			"img/1b.jpg",
+			"img/53fd8e1d1b56b.jpg",
+			"img/182419144.jpg",
+			"mock/skill.json",
+			"img/16154012_Shwu.png",
+			"img/logo-swiper.png",
+			"mock/work.json",
+			"mock/project.json"
+		]
+	}
+}
